@@ -1,0 +1,12 @@
+.header {
+    height: 63px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+
+    &__title {
+        font-family: $Font_logo_and_title;
+        font-size: 30px;
+        font-weight: 400;
+    }
+}

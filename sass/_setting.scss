@@ -1,5 +1,16 @@
+// import google fonts
+@import 'https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap';
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
+// variables fonts
+$Font_logo_and_title: 'Shrikhand', serif;
+$Font_text: 'Roboto', sans-serif;
+
+//variable colors
+$color_bg_main: #ffffff;
+$color_text_noir: #101010;

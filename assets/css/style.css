@@ -1,7 +1,26 @@
+@import 'https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap';
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background: #ffffff;
+  color: #101010;
+  display: grid;
+}
+
+.header {
+  height: 63px;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+}
+.header__title {
+  font-family: "Shrikhand", serif;
+  font-size: 30px;
+  font-weight: 400;
 }
 
 /*# sourceMappingURL=style.css.map */
