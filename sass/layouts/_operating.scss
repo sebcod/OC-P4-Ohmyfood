@@ -1,0 +1,39 @@
+.operating {
+    display: grid;
+    justify-content: center;
+
+    &__container {
+        padding: 48px 20px 68px 20px;
+
+        h2 {
+            font-weight: 700;
+        }
+
+        &__content {
+            margin-top: 25px;
+            display: grid;
+            gap: 25px;
+
+            &__1 {
+                @include stepBlock;
+            }
+
+            &__2 {
+                @include stepBlock;
+            }
+
+            &__3 {
+                @include stepBlock;
+
+                &--purpul ::before {
+                    color: $color_bg_Purple;
+                }
+            }
+        }
+    }
+
+
+
+
+
+}

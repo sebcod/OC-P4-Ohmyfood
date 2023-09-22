@@ -1,0 +1,42 @@
+@mixin stepBlock {
+    width: 323px;
+    display: flex;
+    height: 72px;
+    background: $color_bg_lightGrey;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+    margin-left: 12px;
+    position: relative;
+    padding-right: 15px;
+
+    span {
+        position: absolute;
+        top: 24px;
+        left: -12px;
+        color: $color_text_white;
+        background: $color_bg_Purple;
+        border-radius: 50%;
+        height: 24px;
+        width: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    i {
+        width: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $color_bg_GreyIcon;
+    }
+
+    h3 {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
