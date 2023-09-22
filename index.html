@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/945991a66c.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Oh my food</title>
     <!-- Style.scc -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -11,5 +15,26 @@
     <header class="header">
       <h1 class="header__title">ohmyfood</h1>
     </header>
+    <main>
+      <form class="formLocation">
+        <div class="formLocation__header">
+          <label for="inputLocation"
+            ><i><i class="fa-solid fa-location-dot"></i></i
+          ></label>
+          <input
+            id="inputLocation"
+            type="text"
+            placeholder="Paris, Belleville"
+          />
+        </div>
+        <div class="formLocation__body">
+          <h2>Réservez le menu qui vous convient</h2>
+          <p>
+            Découvrez des restaurants d'exception, sélectionnés par nos soins.
+          </p>
+          <input type="submit" value="Explorer nos restaurants" />
+        </div>
+      </form>
+    </main>
   </body>
 </html>
