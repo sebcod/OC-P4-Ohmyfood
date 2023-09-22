@@ -104,4 +104,140 @@ body {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.operating {
+  display: grid;
+  justify-content: center;
+}
+.operating__container {
+  padding: 48px 20px 68px 20px;
+}
+.operating__container h2 {
+  font-weight: 700;
+}
+.operating__container__content {
+  margin-top: 25px;
+  display: grid;
+  gap: 25px;
+}
+.operating__container__content__1 {
+  width: 323px;
+  display: flex;
+  height: 72px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+  position: relative;
+  padding-right: 15px;
+}
+.operating__container__content__1 span {
+  position: absolute;
+  top: 24px;
+  left: -12px;
+  color: #FFFFFF;
+  background: #9256DC;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.operating__container__content__1 i {
+  width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7E7E7E;
+}
+.operating__container__content__1 h3 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.operating__container__content__2 {
+  width: 323px;
+  display: flex;
+  height: 72px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+  position: relative;
+  padding-right: 15px;
+}
+.operating__container__content__2 span {
+  position: absolute;
+  top: 24px;
+  left: -12px;
+  color: #FFFFFF;
+  background: #9256DC;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.operating__container__content__2 i {
+  width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7E7E7E;
+}
+.operating__container__content__2 h3 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.operating__container__content__3 {
+  width: 323px;
+  display: flex;
+  height: 72px;
+  background: #F6F6F6;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+  margin-left: 12px;
+  position: relative;
+  padding-right: 15px;
+}
+.operating__container__content__3 span {
+  position: absolute;
+  top: 24px;
+  left: -12px;
+  color: #FFFFFF;
+  background: #9256DC;
+  border-radius: 50%;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 14px;
+}
+.operating__container__content__3 i {
+  width: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #7E7E7E;
+}
+.operating__container__content__3 h3 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+.operating__container__content__3--purpul ::before {
+  color: #9256DC;
+}
+
 /*# sourceMappingURL=style.css.map */
