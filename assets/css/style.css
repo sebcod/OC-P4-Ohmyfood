@@ -240,4 +240,62 @@ body {
   color: #9256DC;
 }
 
+.restaurants {
+  background: #F6F6F6;
+}
+.restaurants__container {
+  padding: 54px 18px 66px 18px;
+  display: grid;
+  justify-content: center;
+}
+.restaurants__container__content {
+  width: 95vw;
+  max-width: 490px;
+  margin-top: 20px;
+  display: grid;
+  gap: 18px;
+}
+.restaurants__container__content .cardRestaurant article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 174px 77px;
+  max-width: 490px;
+}
+.restaurants__container__content .cardRestaurant article .newRestaurant {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.restaurants__container__content .cardRestaurant article img {
+  border-radius: 15px 15px 0 0;
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content {
+  background: #FFFFFF;
+  justify-content: space-between;
+  display: flex;
+  align-content: space-around;
+  border-radius: 0 0 15px 15px;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft {
+  padding: 15px 0 0 15px;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft p {
+  font-style: 17px;
+  font-weight: 300;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight {
+  padding: 25px 25px 0 0;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */
