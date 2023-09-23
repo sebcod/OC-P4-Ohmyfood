@@ -240,4 +240,79 @@ body {
   color: #9256DC;
 }
 
+.restaurants {
+  background: #F6F6F6;
+}
+.restaurants__container {
+  padding: 54px 0px 66px 0px;
+  display: grid;
+  justify-content: center;
+}
+.restaurants__container__content {
+  margin-top: 20px;
+  display: grid;
+  gap: 18px;
+  width: 90vw;
+  max-width: 490px;
+}
+.restaurants__container__content .cardRestaurant article {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 174px 77px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1);
+}
+.restaurants__container__content .cardRestaurant article .newRestaurant {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #99E2D0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  width: 80px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.restaurants__container__content .cardRestaurant article .newRestaurant p {
+  color: #008766;
+  font-weight: 500;
+  font-size: 14px;
+}
+.restaurants__container__content .cardRestaurant article img {
+  border-radius: 15px 15px 0 0;
+  height: 174px;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 80%;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant--objectPosition60 {
+  object-position: 50% 60%;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content {
+  background: #FFFFFF;
+  justify-content: space-between;
+  display: flex;
+  align-content: space-around;
+  border-radius: 0 0 15px 15px;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft {
+  padding: 15px 0 0 15px;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft p {
+  font-style: 17px;
+  font-weight: 300;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight {
+  padding: 25px 25px 0 0;
+  height: 100%;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+// Card restaurent
+
+@mixin cardRestaurant {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 174px 77px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+
+    .newRestaurant {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: $color_bg_Green;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 2px;
+        width: 80px;
+        height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+            color: $color_text_green;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+    img {
+        border-radius: 15px 15px 0 0;
+        height: 174px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 50% 80%;
+    }
+
+    .cardRestaurant--objectPosition60 {
+        object-position: 50% 60%;
+    }
+
+    .cardRestaurant__content {
+        background: $color_bg_White;
+        justify-content: space-between;
+        display: flex;
+        align-content: space-around;
+        border-radius: 0 0 15px 15px;
+
+        &__partLeft {
+            padding: 15px 0 0 15px;
+
+            h3 {
+                font-size: 18px;
+                font-weight: 700;
+                margin-bottom: 5px;
+            }
+
+            p {
+                font-style: 17px;
+                font-weight: 300;
+            }
+        }
+
+        &__partRight {
+            padding: 25px 25px 0 0;
+            height: 100%;
+
+            svg:hover {}
+        }
+    }
+}
