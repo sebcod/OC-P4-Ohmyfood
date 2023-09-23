@@ -3,10 +3,11 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 174px 77px;
-    max-width: 490px;
+    //max-width: 490px;
 
     .newRestaurant {
         position: absolute;
+        border: solid 1px red;
         top: 10px;
         right: 10px;
     }
