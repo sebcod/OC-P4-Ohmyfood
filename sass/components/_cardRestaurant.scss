@@ -1,3 +1,5 @@
+// Card restaurent
+
 @mixin cardRestaurant {
     position: relative;
     display: grid;
@@ -64,9 +66,7 @@
             padding: 25px 25px 0 0;
             height: 100%;
 
-            svg:hover {
-                border: solid 1px;
-            }
+            svg:hover {}
         }
     }
 }
