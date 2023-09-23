@@ -314,5 +314,38 @@ body {
   padding: 25px 25px 0 0;
   height: 100%;
 }
+.footer {
+  background: #353535;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+}
+.footer__container {
+  padding: 25px 0;
+  display: grid;
+  gap: 7px;
+  width: 90vw;
+  max-width: 490px;
+}
+.footer__container i {
+  color: #FFFFFF;
+  width: 25px;
+}
+.footer__container h2 {
+  color: #FFFFFF;
+  font-family: "Shrikhand", serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-bottom: 10px;
+}
+.footer__container .proposeAndBecomeAPartner {
+  display: grid;
+  gap: 7px;
+}
+.footer__container .legalNoticeAndContact {
+  display: grid;
+  gap: 7px;
+}
 
 /*# sourceMappingURL=style.css.map */
