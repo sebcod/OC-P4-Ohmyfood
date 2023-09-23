@@ -1,0 +1,41 @@
+// footer
+
+.footer {
+    background: $color_bg_Black;
+    color: $color_text_white;
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        padding: 25px 0;
+        display: grid;
+        gap: 7px;
+        width: 90vw;
+        max-width: 490px;
+
+        i {
+            color: $color_text_white;
+            width: 25px;
+        }
+
+        h2 {
+            color: $color_text_white;
+            font-family: $Font_logo_and_title;
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            margin-bottom: 10px;
+        }
+
+        .proposeAndBecomeAPartner {
+            display: grid;
+            gap: 7px;
+        }
+
+        .legalNoticeAndContact {
+            display: grid;
+            gap: 7px;
+        }
+    }
+
+}
