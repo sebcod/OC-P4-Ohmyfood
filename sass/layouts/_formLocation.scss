@@ -35,8 +35,10 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
-        padding: 30px;
+        padding: 30px 30px 100px 30px;
         background: $color_bg_lightGrey;
+        position: relative;
+
 
         h2 {
             margin: 10px 0;
@@ -52,9 +54,6 @@
             color: $color_text_grey;
         }
 
-        input[type="submit"] {
-            margin: 27px 0;
-            @include buttonHomepage;
-        }
+        @include buttonHomepage;
     }
 }

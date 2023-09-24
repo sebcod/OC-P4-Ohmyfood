@@ -72,8 +72,9 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 30px;
+  padding: 30px 30px 100px 30px;
   background: #F6F6F6;
+  position: relative;
 }
 .formLocation__body h2 {
   margin: 10px 0;
@@ -87,21 +88,28 @@ body {
   font-weight: 300;
   color: #353535;
 }
-.formLocation__body input[type=submit] {
-  margin: 27px 0;
-  padding: 13px 18.75px;
-  width: fit-content;
-  height: 50px;
-  border-radius: 25px;
-  background: linear-gradient(#FF79DA, #9356DC);
+.formLocation__body .btn {
+  background-image: linear-gradient(to right, #9356DC, #FF79DA 50%);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
-  color: #FFFFFF;
-  font-size: 16px;
-  font-weight: 500;
+  transform: rotate(-90deg);
+  background-size: 200%;
+  border-radius: 25px;
+  position: absolute;
+  bottom: -60px;
+  padding: 30px 10px;
+  transition: 0.25s;
+  cursor: pointer;
 }
-.formLocation__body input[type=submit]:hover {
-  background: linear-gradient(#ff93e1, #a16be0);
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+.formLocation__body .btn p {
+  writing-mode: vertical-rl;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 24px;
+  font-size: 16px;
+}
+.formLocation__body .btn:hover {
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.35);
+  background-position: right;
 }
 
 .operating {
