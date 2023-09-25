@@ -97,7 +97,7 @@ body {
   position: absolute;
   bottom: -60px;
   padding: 30px 10px;
-  transition: 0.25s;
+  transition: background-position 0.25s;
   cursor: pointer;
 }
 .formLocation__body .btn p {
