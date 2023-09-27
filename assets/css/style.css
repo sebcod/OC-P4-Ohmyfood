@@ -319,9 +319,50 @@ body {
   font-weight: 300;
 }
 .restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight {
-  padding: 25px 25px 0 0;
-  height: 100%;
+  width: 50px;
+  display: flex;
+  align-items: center;
 }
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight svg:hover {
+  transform: scale(1.1);
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox] {
+  display: none;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox] + label {
+  height: 23px;
+  width: 24px;
+  position: relative;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox] + label svg:nth-child(1) {
+  z-index: 0;
+  position: absolute;
+  fill: url(#grad2);
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox] + label svg:nth-child(2) {
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  transition: opacity 0.5s;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox] + label .drape {
+  z-index: 1;
+  position: absolute;
+  background-color: #ffffff;
+  height: 22px;
+  width: 22px;
+  transition: transform 0.5s ease;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox]:checked + label svg:nth-child(1) {
+  transform: scale(1.1);
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox]:checked + label svg:nth-child(2) {
+  opacity: 0;
+}
+.restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight input[type=checkbox]:checked + label svg:nth-child(2) + .drape {
+  transform: translateY(-24px);
+}
+
 .footer {
   background: #353535;
   color: #FFFFFF;
