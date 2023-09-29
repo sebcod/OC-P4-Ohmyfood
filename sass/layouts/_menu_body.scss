@@ -13,6 +13,8 @@
         &_header {
             display: flex;
             justify-content: center;
+            align-items: center;
+            gap: 24px;
 
             h2 {
                 font-family: $Font_logo_and_title;
