@@ -1,0 +1,32 @@
+// menu_body
+
+.menu_body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1055px;
+    background: $color_bg_lightGrey;
+    margin-top: 32vh;
+    border-radius: 40px 40px 0 0;
+    padding: 32px 13px 40px;
+
+    &_container {
+        &_header {
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                font-family: $Font_logo_and_title;
+                font-size: 28px;
+                font-weight: 400;
+            }
+
+            @include heart;
+
+            .heart input[type=checkbox]+label {
+                .drape {
+                    background-color: $color_bg_lightGrey;
+                }
+            }
+        }
+    }
+}
