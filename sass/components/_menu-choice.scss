@@ -1,7 +1,12 @@
 // menu choice
 
+// variable animation
+$animation_speed: 0.3s;
+
+
 fieldset {
     margin: auto;
+    margin-top: 40px;
     border-radius: 20px;
     padding: 0 10px 10px 10px;
     display: grid;
@@ -9,17 +14,28 @@ fieldset {
     width: 100%;
     max-width: 634px;
     min-width: 350px;
-    color: $color_bg_Green;
+
 
     legend {
-        color: $color_bg_Green;
-        font-size: 1.5rem;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 24px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 1.5rem;
+            height: 0.2rem;
+            width: 2.5rem;
+            background-color: $color_bg_Green;
+        }
     }
 
     .plats {
         border-radius: 20px;
         overflow: hidden;
-        //border: solid 1px blue;
         display: flex;
         justify-content: center;
         gap: 20px;
@@ -27,7 +43,11 @@ fieldset {
         max-width: 634px;
         min-width: 350px;
         user-select: none;
+        box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
 
+        &:hover {
+            box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.20);
+        }
 
         input[type=radio]:hover+label {
             .part_right {
@@ -62,29 +82,33 @@ fieldset {
 
             .part_left {
                 min-width: 0;
+                padding: 10px 0 10px 15px;
 
                 h3,
                 p {
-                    margin: 5px 20px;
+                    margin: 5px;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
-                    font-size: 1.5rem;
                 }
+
             }
 
             .part_right {
                 width: 100px;
                 height: 100%;
+                //padding: 15px;
                 min-width: 100px;
                 display: flex;
-                justify-content: center;
+                justify-content: flex-end;
                 align-items: flex-end;
                 position: relative;
-                transition: ease-in-out 0.5s;
+                transition: ease-in-out $animation_speed;
 
                 p {
-                    padding-bottom: 10px;
+                    font-weight: 800;
+                    padding-bottom: 15px;
+                    padding-right: 15px;
                 }
 
                 .selected {
@@ -102,7 +126,7 @@ fieldset {
                         font-size: 2rem;
                         fill: $color_bg_White;
                         transform: rotate(180deg);
-                        transition: ease-in-out 0.5s;
+                        transition: ease-in-out $animation_speed;
                     }
                 }
             }

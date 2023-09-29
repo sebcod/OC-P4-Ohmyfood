@@ -29,6 +29,7 @@ input[value] {
 
 fieldset {
   margin: auto;
+  margin-top: 40px;
   border-radius: 20px;
   padding: 0 10px 10px 10px;
   display: grid;
@@ -36,11 +37,21 @@ fieldset {
   width: 100%;
   max-width: 634px;
   min-width: 350px;
-  color: #99E2D0;
 }
 fieldset legend {
-  color: #99E2D0;
-  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 300;
+  margin-bottom: 24px;
+  position: relative;
+}
+fieldset legend::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  height: 0.2rem;
+  width: 2.5rem;
+  background-color: #99E2D0;
 }
 fieldset .plats {
   border-radius: 20px;
@@ -52,6 +63,10 @@ fieldset .plats {
   max-width: 634px;
   min-width: 350px;
   user-select: none;
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
+}
+fieldset .plats:hover {
+  box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.2);
 }
 fieldset .plats input[type=radio]:hover + label .part_right {
   transform: translateX(-15px);
@@ -78,27 +93,29 @@ fieldset .plats label {
 }
 fieldset .plats label .part_left {
   min-width: 0;
+  padding: 10px 0 10px 15px;
 }
 fieldset .plats label .part_left h3,
 fieldset .plats label .part_left p {
-  margin: 5px 20px;
+  margin: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 1.5rem;
 }
 fieldset .plats label .part_right {
   width: 100px;
   height: 100%;
   min-width: 100px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: flex-end;
   position: relative;
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 }
 fieldset .plats label .part_right p {
-  padding-bottom: 10px;
+  font-weight: 800;
+  padding-bottom: 15px;
+  padding-right: 15px;
 }
 fieldset .plats label .part_right .selected {
   background-color: #99E2D0;
@@ -115,7 +132,7 @@ fieldset .plats label .part_right .selected svg {
   font-size: 2rem;
   fill: #FFFFFF;
   transform: rotate(180deg);
-  transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.3s;
 }
 
 @keyframes myAnim {
@@ -535,6 +552,7 @@ fieldset .plats label .part_right .selected svg {
   margin-top: 32vh;
   border-radius: 40px 40px 0 0;
   padding: 32px 13px 40px;
+  overflow: hidden;
 }
 .menu_body_container_header {
   display: flex;
