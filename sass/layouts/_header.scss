@@ -3,6 +3,7 @@
     display: grid;
     justify-content: center;
     align-content: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
     &__title {
         font-family: $Font_logo_and_title;
