@@ -83,7 +83,7 @@ input[value] {
 }
 .formLocation__body p {
   max-width: 280px;
-  font-style: 18px;
+  font-size: 18px;
   font-weight: 300;
   color: #353535;
 }
@@ -318,7 +318,7 @@ input[value] {
   margin-bottom: 5px;
 }
 .restaurants__container__content .cardRestaurant article .cardRestaurant__content__partLeft p {
-  font-style: 17px;
+  font-size: 17px;
   font-weight: 300;
 }
 .restaurants__container__content .cardRestaurant article .cardRestaurant__content__partRight {
