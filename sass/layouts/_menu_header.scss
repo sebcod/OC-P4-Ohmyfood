@@ -1,0 +1,12 @@
+// menu header
+
+.menu_header {
+    img {
+        width: 100%;
+        height: 36vh;
+        object-fit: cover;
+        object-position: 50% 60%;
+        position: absolute;
+        z-index: -1;
+    }
+}
