@@ -40,6 +40,17 @@ $color_button_bottom: #9356DC;
 $Font_logo_and_title: 'Shrikhand', serif;
 $Font_text: 'Roboto', sans-serif;
 
+body {
+    .body_container {
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+        position: relative;
+    }
+}
+
 p,
 h2,
 h3,

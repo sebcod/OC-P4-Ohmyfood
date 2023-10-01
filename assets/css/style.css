@@ -17,6 +17,15 @@ li {
   list-style: none;
 }
 
+body .body_container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: grid;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
 p,
 h2,
 h3,
@@ -826,15 +835,6 @@ input[value] {
 }
 .menu_body_container_footer .button:active {
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
-}
-
-body .body_container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  display: grid;
-  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
-  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */
