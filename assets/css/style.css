@@ -299,7 +299,8 @@ input[value] {
   gap: 25px;
 }
 .operating__container__content__1 {
-  width: 323px;
+  width: 100%;
+  max-width: 323px;
   display: flex;
   height: 72px;
   background: #F6F6F6;
@@ -338,7 +339,8 @@ input[value] {
   font-size: 16px;
 }
 .operating__container__content__2 {
-  width: 323px;
+  width: 100%;
+  max-width: 323px;
   display: flex;
   height: 72px;
   background: #F6F6F6;
@@ -377,7 +379,8 @@ input[value] {
   font-size: 16px;
 }
 .operating__container__content__3 {
-  width: 323px;
+  width: 100%;
+  max-width: 323px;
   display: flex;
   height: 72px;
   background: #F6F6F6;
@@ -820,8 +823,9 @@ input[value] {
 .menu_body_container_footer {
   position: relative;
   height: 60px;
-  width: 0;
-  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .menu_body_container_footer .button {
   background-image: linear-gradient(to right, #9356DC, #FF79DA 50%);

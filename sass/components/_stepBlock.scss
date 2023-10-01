@@ -1,5 +1,6 @@
 @mixin stepBlock {
-    width: 323px;
+    width: 100%;
+    max-width: 323px;
     display: flex;
     height: 72px;
     background: $color_bg_lightGrey;
