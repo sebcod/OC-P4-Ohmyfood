@@ -7,17 +7,15 @@
     $delay_animation_plat: 0.1s;
     $delay_animation_plat_gap: 0.4s;
 
-
     fieldset {
         margin: auto;
         margin-top: 40px;
         border-radius: 20px;
-        padding: 0 10px 10px 10px;
+        padding-bottom: 10px;
         display: grid;
         gap: 10px;
         width: 100%;
         max-width: 634px;
-        min-width: 350px;
 
         legend {
             text-transform: uppercase;
@@ -44,7 +42,6 @@
             gap: 20px;
             width: 100%;
             max-width: 634px;
-            min-width: 350px;
             user-select: none;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
             transform: translateX(-600px);
@@ -80,40 +77,50 @@
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                min-width: 350px;
                 border-radius: 20px;
                 background-color: $color_bg_White;
                 overflow: hidden;
+                font-family: $Font_text;
 
                 .part_left {
                     min-width: 0;
                     padding: 10px 0 10px 15px;
 
-                    h3,
-                    p {
+                    span {
+                        display: block;
                         margin: 5px;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
-                    }
 
+                        &:first-child {
+                            font-size: 1em;
+                            font-weight: 800;
+                        }
+
+                        &:last-child {
+                            font-size: 0.9em;
+                            font-weight: 300;
+                        }
+                    }
                 }
 
                 .part_right {
-                    width: 100px;
+                    //width: 100px;
                     height: 100%;
                     //padding: 15px;
-                    min-width: 100px;
+                    //min-width: 50px;
                     display: flex;
                     justify-content: flex-end;
                     align-items: flex-end;
                     position: relative;
                     transition: ease-in-out $animation_speed_check;
 
-                    p {
-                        font-weight: 800;
-                        padding-bottom: 15px;
-                        padding-right: 15px;
+                    span.price {
+                        color: $color_text_grey;
+                        font-weight: 700;
+                        margin-bottom: 15px;
+                        margin-right: 15px;
                     }
 
                     .selected {

@@ -3,7 +3,6 @@
 .restaurants {
     background: $color_bg_lightGrey;
 
-
     &__container {
         padding: 54px 0px 66px 0px;
         display: grid;
@@ -19,7 +18,6 @@
             .cardRestaurant {
                 @include cardRestaurant;
             }
-
         }
     }
 }

@@ -63,17 +63,17 @@
       </header>
       <main>
         <!-- <<<<<<<<<<<<  menu_header  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-        <section class="menu_header">
+        <div class="menu_header">
           <img
             src="../assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
             alt="images restaurant jay-wennington"
           />
-        </section>
+        </div>
         <!-- <<<<<<<<<<<<  menu_body  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
         <section class="menu_body">
           <div class="menu_body_container">
             <div class="menu_body_container_header">
-              <h2>La palette du goût</h2>
+              <h1>La palette du goût</h1>
               <div class="heart">
                 <input
                   type="checkbox"
@@ -117,7 +117,7 @@
                       stroke="#101010"
                     />
                   </svg>
-                  <div class="drape"></div>
+                  <span class="drape"></span>
                 </label>
               </div>
             </div>
@@ -129,18 +129,18 @@
                 <div id="entrée_1" class="plats">
                   <input
                     type="radio"
-                    id="Fricassée d'escargots"
+                    id="Fricassée_d'escargots"
                     name="Entrée"
-                    value="Fricassée d'escargots"
+                    value="Fricassée_d'escargots"
                   />
-                  <label for="Fricassée d'escargots">
-                    <div class="part_left">
-                      <h3>Fricassée d'escargots</h3>
-                      <p>Au piment d'Espelette</p>
-                    </div>
-                    <div class="part_right">
-                      <p>25€</p>
-                      <div class="selected">
+                  <label for="Fricassée_d'escargots">
+                    <span class="part_left">
+                      <span>Fricassée d'escargots</span>
+                      <span>Au piment d'Espelette</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">25€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -151,26 +151,26 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
 
                 <div id="entrée_2" class="plats">
                   <input
                     type="radio"
-                    id="Foie gras de canard mi-cuit"
+                    id="Foie_gras_de_canard_mi-cuit"
                     name="Entrée"
-                    value="Foie gras de canard mi-cuit"
+                    value="Foie_gras_de_canard_mi-cuit"
                   />
-                  <label for="Foie gras de canard mi-cuit">
-                    <div class="part_left">
-                      <h3>Foie gras de canard mi-cuit</h3>
-                      <p>Et ses copeaux de truffe noire</p>
-                    </div>
-                    <div class="part_right">
-                      <p>35€</p>
-                      <div class="selected">
+                  <label for="Foie_gras_de_canard_mi-cuit">
+                    <span class="part_left">
+                      <span>Foie gras de canard mi-cuit</span>
+                      <span>Et ses copeaux de truffe noire</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">35€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -180,26 +180,26 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
 
                 <div id="entrée_3" class="plats">
                   <input
                     type="radio"
-                    id="Œuf au plat"
+                    id="Œuf_au_plat"
                     name="Entrée"
-                    value="Œuf au plat"
+                    value="Œuf_au_plat"
                   />
-                  <label for="Œuf au plat">
-                    <div class="part_left">
-                      <h3>Œuf au plat</h3>
-                      <p>Assaisonné à la truffe sur lit de caviar</p>
-                    </div>
-                    <div class="part_right">
-                      <p>25€</p>
-                      <div class="selected">
+                  <label for="Œuf_au_plat">
+                    <span class="part_left">
+                      <span>Œuf au plat</span>
+                      <span>Assaisonné à la truffe sur lit de caviar</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">25€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -209,8 +209,8 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
               </fieldset>
@@ -220,18 +220,18 @@
                 <div id="plat_1" class="plats">
                   <input
                     type="radio"
-                    id="Filet de bœuf aux herbes"
+                    id="Filet_de_bœuf_aux_herbes"
                     name="plat"
-                    value="Filet de bœuf aux herbes"
+                    value="Filet_de_bœuf_aux_herbes"
                   />
-                  <label for="Filet de bœuf aux herbes">
-                    <div class="part_left">
-                      <h3>Filet de bœuf aux herbes</h3>
-                      <p>Accompagné de sa ribambelle de légumes</p>
-                    </div>
-                    <div class="part_right">
-                      <p>40€</p>
-                      <div class="selected">
+                  <label for="Filet_de_bœuf_aux_herbes">
+                    <span class="part_left">
+                      <span>Filet de bœuf aux herbes</span>
+                      <span>Accompagné de sa ribambelle de légumes</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">40€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -242,26 +242,26 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
 
                 <div id="plat_2" class="plats">
                   <input
                     type="radio"
-                    id="Parmentier de queue de bœuf"
+                    id="Parmentier_de_queue_de_bœuf"
                     name="plat"
-                    value="Parmentier de queue de bœuf"
+                    value="Parmentier_de_queue_de_bœuf"
                   />
-                  <label for="Parmentier de queue de bœuf">
-                    <div class="part_left">
-                      <h3>Parmentier de queue de bœuf</h3>
-                      <p>À la truffe noire sur sa purée de panais</p>
-                    </div>
-                    <div class="part_right">
-                      <p>35€</p>
-                      <div class="selected">
+                  <label for="Parmentier_de_queue_de_bœuf">
+                    <span class="part_left">
+                      <span>Parmentier de queue de bœuf</span>
+                      <span>À la truffe noire sur sa purée de panais</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">35€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -271,26 +271,26 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
 
                 <div id="plat_3" class="plats">
                   <input
                     type="radio"
-                    id="Filet de turbot"
+                    id="Filet_de_turbot"
                     name="plat"
-                    value="Filet de turbot"
+                    value="Filet_de_turbot"
                   />
-                  <label id="entrée_3" for="Filet de turbot">
-                    <div class="part_left">
-                      <h3>Filet de turbot</h3>
-                      <p>Aux agrumes</p>
-                    </div>
-                    <div class="part_right">
-                      <p>44€</p>
-                      <div class="selected">
+                  <label for="Filet_de_turbot">
+                    <span class="part_left">
+                      <span>Filet de turbot</span>
+                      <span>Aux agrumes</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">44€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -300,8 +300,8 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
               </fieldset>
@@ -316,13 +316,13 @@
                     value="Paris-Brest"
                   />
                   <label for="Paris-Brest">
-                    <div class="part_left">
-                      <h3>Paris-Brest</h3>
-                      <p>Revisité</p>
-                    </div>
-                    <div class="part_right">
-                      <p>18€</p>
-                      <div class="selected">
+                    <span class="part_left">
+                      <span>Paris-Brest</span>
+                      <span>Revisité</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">18€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -333,26 +333,26 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
 
                 <div id="dessert_2" class="plats">
                   <input
                     type="radio"
-                    id="Macaron au chocolat d'exception"
+                    id="Macaron_au_chocolat_d'exception"
                     name="dessert"
-                    value="Macaron au chocolat d'exception"
+                    value="Macaron_au_chocolat_d'exception"
                   />
-                  <label for="Macaron au chocolat d'exception">
-                    <div class="part_left">
-                      <h3>Macaron au chocolat d'exception</h3>
-                      <p>Et glace à la vanille de Madagascar</p>
-                    </div>
-                    <div class="part_right">
-                      <p>22€</p>
-                      <div class="selected">
+                  <label for="Macaron_au_chocolat_d'exception">
+                    <span class="part_left">
+                      <span>Macaron au chocolat d'exception</span>
+                      <span>Et glace à la vanille de Madagascar</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">22€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -362,26 +362,26 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
 
                 <div id="dessert_3" class="plats">
                   <input
                     type="radio"
-                    id="Mousse au chocolat "
+                    id="Mousse_au_chocolat"
                     name="dessert"
-                    value="Mousse au chocolat "
+                    value="Mousse_au_chocolat"
                   />
-                  <label id="dersert_3" for="Mousse au chocolat ">
-                    <div class="part_left">
-                      <h3>Mousse au chocolat</h3>
-                      <p>Au piment d'Espelette et à la truffe noire</p>
-                    </div>
-                    <div class="part_right">
-                      <p>23€</p>
-                      <div class="selected">
+                  <label id="dersert_3" for="Mousse_au_chocolat">
+                    <span class="part_left">
+                      <span>Mousse au chocolat</span>
+                      <span>Au piment d'Espelette et à la truffe noire</span>
+                    </span>
+                    <span class="part_right">
+                      <span class="price">23€</span>
+                      <span class="selected">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           height="1em"
@@ -391,8 +391,8 @@
                             d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"
                           />
                         </svg>
-                      </div>
-                    </div>
+                      </span>
+                    </span>
                   </label>
                 </div>
               </fieldset>
