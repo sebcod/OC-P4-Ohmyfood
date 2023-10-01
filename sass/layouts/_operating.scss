@@ -14,9 +14,9 @@
             display: grid;
             gap: 25px;
 
-            // @media only screen and (min-width: 1024px) {
-            //     display: flex;
-            // }
+            @media only screen and (min-width: 1024px) {
+                display: flex;
+            }
 
             &__1 {
                 @include stepBlock;
