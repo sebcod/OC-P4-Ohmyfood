@@ -1,6 +1,7 @@
 // Card restaurent
 
 @mixin cardRestaurant {
+    max-width: 490px;
     position: relative;
     display: grid;
     grid-template-columns: 1fr;
@@ -55,6 +56,10 @@
                 font-size: 18px;
                 font-weight: 700;
                 margin-bottom: 5px;
+
+                &::first-letter {
+                    text-transform: capitalize;
+                }
             }
 
             p {
