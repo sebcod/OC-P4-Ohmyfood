@@ -3,6 +3,7 @@
 .restaurants {
     background: $color_bg_lightGrey;
 
+
     &__container {
         padding: 54px 0px 66px 0px;
         display: grid;
@@ -15,9 +16,10 @@
             width: 90vw;
             max-width: 490px;
 
-            .cardRestaurant article {
+            .cardRestaurant {
                 @include cardRestaurant;
             }
+
         }
     }
 }
