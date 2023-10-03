@@ -286,13 +286,19 @@ input[value] {
 
 .operating {
   display: grid;
-  justify-content: center;
+  justify-items: center;
 }
 .operating__container {
   padding: 48px 20px 68px 20px;
 }
 .operating__container h2 {
   font-weight: 700;
+}
+@media only screen and (min-width: 1024px) {
+  .operating__container {
+    width: 100%;
+    max-width: 1120px;
+  }
 }
 .operating__container__content {
   margin-top: 25px;
