@@ -180,27 +180,31 @@
         animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*3) 1 normal forwards;
     }
 
-    #plat_1 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*3 + $delay_animation_plat_gap) 1 normal forwards;
+    #entrée_4 {
+        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*4) 1 normal forwards;
     }
 
-    #plat_2 {
+    #plat_1 {
         animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*4 + $delay_animation_plat_gap) 1 normal forwards;
     }
 
-    #plat_3 {
+    #plat_2 {
         animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*5 + $delay_animation_plat_gap) 1 normal forwards;
     }
 
+    #plat_3 {
+        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*6 + $delay_animation_plat_gap) 1 normal forwards;
+    }
+
     #dessert_1 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*6 + $delay_animation_plat_gap*2) 1 normal forwards;
+        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*8 + $delay_animation_plat_gap*2) 1 normal forwards;
     }
 
     #dessert_2 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*7 + $delay_animation_plat_gap*2) 1 normal forwards;
+        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*9 + $delay_animation_plat_gap*2) 1 normal forwards;
     }
 
     #dessert_3 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*8 + $delay_animation_plat_gap*2) 1 normal forwards;
+        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*10 + $delay_animation_plat_gap*2) 1 normal forwards;
     }
 }

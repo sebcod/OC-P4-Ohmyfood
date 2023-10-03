@@ -870,23 +870,26 @@ input[value] {
 .menu_body_container_body-starters-dishes-desserts #entrée_3 {
   animation: myAnim 0.8s ease-in-out 0.3s 1 normal forwards;
 }
-.menu_body_container_body-starters-dishes-desserts #plat_1 {
-  animation: myAnim 0.8s ease-in-out 0.7s 1 normal forwards;
+.menu_body_container_body-starters-dishes-desserts #entrée_4 {
+  animation: myAnim 0.8s ease-in-out 0.4s 1 normal forwards;
 }
-.menu_body_container_body-starters-dishes-desserts #plat_2 {
+.menu_body_container_body-starters-dishes-desserts #plat_1 {
   animation: myAnim 0.8s ease-in-out 0.8s 1 normal forwards;
 }
-.menu_body_container_body-starters-dishes-desserts #plat_3 {
+.menu_body_container_body-starters-dishes-desserts #plat_2 {
   animation: myAnim 0.8s ease-in-out 0.9s 1 normal forwards;
 }
+.menu_body_container_body-starters-dishes-desserts #plat_3 {
+  animation: myAnim 0.8s ease-in-out 1s 1 normal forwards;
+}
 .menu_body_container_body-starters-dishes-desserts #dessert_1 {
-  animation: myAnim 0.8s ease-in-out 1.4s 1 normal forwards;
+  animation: myAnim 0.8s ease-in-out 1.6s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #dessert_2 {
-  animation: myAnim 0.8s ease-in-out 1.5s 1 normal forwards;
+  animation: myAnim 0.8s ease-in-out 1.7s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #dessert_3 {
-  animation: myAnim 0.8s ease-in-out 1.6s 1 normal forwards;
+  animation: myAnim 0.8s ease-in-out 1.8s 1 normal forwards;
 }
 .menu_body_container_footer {
   position: relative;
