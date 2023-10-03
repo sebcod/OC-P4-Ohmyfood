@@ -1,12 +1,17 @@
 .operating {
     display: grid;
-    justify-content: center;
+    justify-items: center;
 
     &__container {
         padding: 48px 20px 68px 20px;
 
         h2 {
             font-weight: 700;
+        }
+
+        @media only screen and (min-width: 1024px) {
+            width: 100%;
+            max-width: 1120px;
         }
 
         &__content {
