@@ -21,30 +21,23 @@
 }
 
 .loader {
+    @include grid-center;
     cursor: none;
     background: radial-gradient(circle, #ffffff 0%, rgba(53, 53, 53, 1) 100%);
-    position: absolute;
-    z-index: 10000000000000;
-
     left: 0;
     height: 100vh;
     width: 100%;
-    display: grid;
-    align-items: center;
-    justify-items: center;
     overflow: hidden;
     animation: hidden_loader 3s linear forwards;
 
     .fork {
         transform: scale(0.12) translateX(-38rem);
         position: absolute;
-        z-index: 0;
     }
 
     .knife {
         transform: scale(0.12) translateX(38rem);
         position: absolute;
-        z-index: 0;
     }
 
     .cercle1,
@@ -52,8 +45,6 @@
         position: absolute;
         border-radius: 50%;
         display: inline-block;
-        //background: linear-gradient(0deg, rgba(255, 61, 0, 0.2) 33%, #ff3d00 100%);
-        //background: linear-gradient(#9356DC 90%, #ffffff 100%);
         box-sizing: border-box;
         animation: rotation 1s linear infinite;
     }

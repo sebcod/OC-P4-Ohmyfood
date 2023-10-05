@@ -1,6 +1,6 @@
 // menu choice
 
-@mixin menu-choice {
+.menu_body_container_body-starters-dishes-desserts {
     // variables animations
     $animation_speed_check: 0.3s;
     $animation_speed_plat: 0.8s;
@@ -35,10 +35,10 @@
         }
 
         .plats {
-            border-radius: 20px;
-            overflow: hidden;
             display: flex;
             justify-content: center;
+            border-radius: 20px;
+            overflow: hidden;
             gap: 20px;
             width: 100%;
             max-width: 634px;
@@ -107,9 +107,7 @@
 
                 .part_right {
                     height: 100%;
-                    display: flex;
-                    justify-content: flex-end;
-                    align-items: flex-end;
+                    @include flex-end;
                     position: relative;
                     transition: ease-in-out $animation_speed_check;
 
@@ -127,9 +125,7 @@
                         width: 100px;
                         height: 100%;
                         right: -100px;
-                        display: grid;
-                        align-items: center;
-                        justify-items: center;
+                        @include grid-center;
 
                         svg {
                             font-size: 2rem;

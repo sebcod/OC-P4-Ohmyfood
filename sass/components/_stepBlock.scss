@@ -1,7 +1,9 @@
-@mixin stepBlock {
+// step block
+
+.stepBlock {
+    display: flex;
     width: 100%;
     max-width: 323px;
-    display: flex;
     height: 72px;
     background: $color_bg_lightGrey;
     border-radius: 20px;
@@ -19,25 +21,24 @@
         border-radius: 50%;
         height: 24px;
         width: 24px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
         font-weight: 500;
         font-size: 14px;
     }
 
     i {
         width: 74px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         color: $color_bg_GreyIcon;
     }
 
     h3 {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         font-weight: 500;
         font-size: 16px;
+    }
+
+    &--purpul ::before {
+        color: $color_bg_Purple;
     }
 }
