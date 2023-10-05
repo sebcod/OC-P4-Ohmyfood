@@ -5,9 +5,19 @@
 
     &__container {
         padding: 54px 0px 66px 0px;
-        display: grid;
-        justify-content: center;
+        @include grid-center;
+        justify-items: start;
         margin: auto;
+        width: 90vw;
+        max-width: 490px;
+
+        @media only screen and (min-width: 1024px) {
+            max-width: 1080px;
+        }
+
+        h2 {
+            align-self: start;
+        }
 
         &__content {
             margin-top: 20px;
@@ -17,18 +27,11 @@
             max-width: 490px;
 
             @media only screen and (min-width: 1024px) {
-                gap: 0;
-                width: 90vw;
                 max-width: 1080px;
-                align-items: baseline;
                 grid-template-columns: repeat(2, 1fr);
                 grid-template-rows: repeat(2, 1fr);
                 grid-column-gap: 100px;
                 grid-row-gap: 50px;
-            }
-
-            .cardRestaurant {
-                @include cardRestaurant;
             }
         }
     }

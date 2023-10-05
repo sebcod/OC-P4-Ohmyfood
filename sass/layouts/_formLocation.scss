@@ -1,10 +1,10 @@
 .formLocation {
 
     &__header {
-        display: flex;
-        justify-content: center;
+        @include flex-center;
         gap: 17px;
         background: $color_bg_grey;
+
 
         label {
             align-self: center;
@@ -19,7 +19,6 @@
             width: 110px;
             background: $color_bg_grey;
 
-
             &::placeholder {
                 font-size: 16px;
             }
@@ -31,29 +30,25 @@
     }
 
     &__body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+        @include flex-column-center;
         padding: 30px 30px 100px 30px;
         background: $color_bg_lightGrey;
         position: relative;
 
-
         h2 {
             margin: 10px 0;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 700;
-            max-width: 250px;
+
+            @media only screen and (min-width: 1024px) {
+                font-size: 2.5rem;
+            }
         }
 
-        p {
-            max-width: 280px;
-            font-size: 18px;
+        &>p {
+            font-size: 1.125rem;
             font-weight: 300;
             color: $color_text_grey;
         }
-
-        @include button;
     }
 }

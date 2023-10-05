@@ -1,11 +1,9 @@
 // footer
 
 .footer {
-
     background: $color_bg_Black;
     color: $color_text_white;
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     font-family: $Font_text;
 
     &__container {
@@ -17,12 +15,12 @@
 
         @media only screen and (min-width: 1024px) {
             display: flex;
+            justify-content: end;
+            align-items: last baseline;
             width: 100%;
             max-width: none;
             padding: 30px 50px;
             height: 114px;
-            justify-content: end;
-            align-items: last baseline;
             gap: 30px;
         }
 

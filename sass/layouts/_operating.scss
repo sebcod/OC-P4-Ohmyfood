@@ -1,17 +1,16 @@
 .operating {
-    display: grid;
-    justify-items: center;
+    @include grid-center;
 
     &__container {
-        padding: 48px 20px 68px 20px;
+        padding: 48px 0px 68px 0px;
 
         h2 {
             font-weight: 700;
         }
 
         @media only screen and (min-width: 1024px) {
-            width: 100%;
-            max-width: 1120px;
+            width: 90vw;
+            max-width: 1080px;
         }
 
         &__content {
@@ -21,22 +20,7 @@
 
             @media only screen and (min-width: 1024px) {
                 display: flex;
-            }
-
-            &__1 {
-                @include stepBlock;
-            }
-
-            &__2 {
-                @include stepBlock;
-            }
-
-            &__3 {
-                @include stepBlock;
-
-                &--purpul ::before {
-                    color: $color_bg_Purple;
-                }
+                justify-content: space-around;
             }
         }
     }

@@ -1,10 +1,17 @@
-@import "setting";
+@import "./themes/theme";
+
+@import "./base/reset";
+@import "./base/typography";
+
+@import "./utils/mixins";
+
 @import "components/button";
 @import "components/heart";
 @import "components/stepBlock";
 @import "components/cardRestaurant";
 @import "components/menu-choice";
 @import "components/loader";
+
 @import "layouts/header";
 @import "layouts/formLocation";
 @import "layouts/operating";
@@ -12,3 +19,6 @@
 @import "layouts/footer";
 @import "layouts/menu_header";
 @import "layouts/menu_body";
+
+@import "./pages/index";
+@import "./pages/menu-restaurant";
