@@ -1,6 +1,6 @@
 // loader
 
-// hidde body_container
+// to start, hidde body_container
 .body_container_honmepage {
     overflow: hidden;
     animation: hidden_body_container 3s linear forwards;
@@ -24,39 +24,37 @@
     @include grid-center;
     cursor: none;
     background: radial-gradient(circle, #ffffff 0%, rgba(53, 53, 53, 1) 100%);
-    left: 0;
+
+    // loader full screen
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
+
+    // Animation loader 3s
     animation: hidden_loader 3s linear forwards;
 
+    // Fork position
     .fork {
         transform: scale(0.12) translateX(-38rem);
         position: absolute;
     }
 
+    // Knife position
     .knife {
         transform: scale(0.12) translateX(38rem);
         position: absolute;
     }
 
+    // creation and position of place
     .cercle1,
     .cercle2 {
         position: absolute;
         border-radius: 50%;
-        display: inline-block;
-        box-sizing: border-box;
         animation: rotation 1s linear infinite;
     }
 
+    // Creating the first reflection of light
     .cercle1 {
-        width: 200px;
-        height: 200px;
-        z-index: 2;
-        background: linear-gradient(#9356DC 95%, #99E2D0 100%);
-    }
-
-    .cercle2 {
         z-index: 1;
         width: 250px;
         height: 250px;
@@ -64,10 +62,18 @@
         background: linear-gradient(#9356DC 50%, #99E2D0 100%);
     }
 
+    // Creation of the second light reflection
+    .cercle2 {
+        z-index: 2;
+        width: 200px;
+        height: 200px;
+        background: linear-gradient(#9356DC 95%, #99E2D0 100%);
+    }
+
+    // Partial background masking
     .cercle1::after,
     .cercle2::after {
         content: '';
-        box-sizing: border-box;
         position: absolute;
         left: 50%;
         top: 50%;
@@ -77,15 +83,16 @@
     }
 
     .cercle1::after {
-        width: 195px;
-        height: 195px;
-    }
-
-    .cercle2::after {
         width: 245px;
         height: 245px;
     }
 
+    .cercle2::after {
+        width: 195px;
+        height: 195px;
+    }
+
+    // Shodow inside the plate
     .cercle3 {
         position: absolute;
         width: 195px;
@@ -95,6 +102,8 @@
         box-shadow: inset 3px 3px 15px -5px #000000, 1px 1px 200px -20px #ffffff;
     }
 
+    // Balsamic vinegar spinner
+    // first dorder
     .cercle4 {
         position: absolute;
         z-index: 4;
@@ -106,6 +115,7 @@
         animation: rotation2 1s linear infinite;
     }
 
+    // Second dorder
     .cercle4::after {
         content: '';
         position: absolute;
@@ -118,17 +128,20 @@
         border-left: 5px solid transparent;
     }
 
+    // Light reflection on balsamic vinegar spinner
+    // first border
     .cercle5 {
         position: absolute;
         z-index: 5;
-        width: 100px;
-        height: 100px;
+        width: 95px;
+        height: 95px;
         border-radius: 50%;
-        border-top: 1px solid #ffffff;
+        border-top: 1px solid #FFFFFF;
         border-right: 1.5px solid transparent;
         animation: rotation2 1s linear infinite;
     }
 
+    // Second border
     .cercle5::after {
         content: '';
         position: absolute;
@@ -137,10 +150,11 @@
         width: 103px;
         height: 103px;
         border-radius: 50%;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid #FFFFFF;
         border-left: 1.2px solid transparent;
     }
 
+    // ratotion plate
     @keyframes rotation {
         100% {
             transform: rotate(0deg)
@@ -151,6 +165,7 @@
         }
     }
 
+    // ratation balsamic vinegar spinner
     @keyframes rotation2 {
         0% {
             transform: rotate(0deg)
@@ -161,6 +176,7 @@
         }
     }
 
+    // animation disappearance loader
     @keyframes hidden_loader {
         0% {
             opacity: 1

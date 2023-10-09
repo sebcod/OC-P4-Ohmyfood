@@ -8,21 +8,25 @@
         transform: scale(1.1);
     }
 
+    // hide checkbox
     input[type=checkbox] {
         display: none;
     }
 
+    // visible part of the heart
     input[type=checkbox]+label {
         height: 23px;
         width: 24px;
         position: relative;
 
+        // gradient color heart
         svg:nth-child(1) {
             z-index: 0;
             position: absolute;
             fill: url(#grad2);
         }
 
+        // heart border black
         svg:nth-child(2) {
             z-index: 2;
             position: absolute;
@@ -30,6 +34,7 @@
             transition: opacity 0.5s;
         }
 
+        // span hiding the gradient color heart
         .drape {
             z-index: 1;
             position: absolute;
@@ -40,15 +45,18 @@
         }
     }
 
+    // heart clicked
     input[type=checkbox]:checked+label {
         svg:nth-child(1) {
             transform: scale(1.1);
         }
 
+        // heart border black disappear
         svg:nth-child(2) {
             opacity: 0;
         }
 
+        // lift the sheet to reveal the gradient color heart
         svg:nth-child(2)+.drape {
             transform: translateY(-24px);
         }

@@ -317,15 +317,15 @@ input[value] {
   margin-right: 15px;
 }
 .menu_body_container_body-starters-dishes-desserts fieldset .plats label .part_right .selected {
+  display: grid;
+  justify-items: center;
+  align-items: center;
   background-color: #99E2D0;
   position: absolute;
   border-radius: 0 20px 20px 0;
   width: 100px;
   height: 100%;
   right: -100px;
-  display: grid;
-  justify-items: center;
-  align-items: center;
 }
 .menu_body_container_body-starters-dishes-desserts fieldset .plats label .part_right .selected svg {
   font-size: 2rem;
@@ -333,7 +333,7 @@ input[value] {
   transform: rotate(180deg);
   transition: ease-in-out 0.3s;
 }
-@keyframes myAnim {
+@keyframes anim-arrival-of-dishes {
   0% {
     animation-timing-function: ease-in-out;
     opacity: 0;
@@ -354,34 +354,34 @@ input[value] {
   }
 }
 .menu_body_container_body-starters-dishes-desserts #entrée_1 {
-  animation: myAnim 0.8s ease-in-out 0.1s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 0.1s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #entrée_2 {
-  animation: myAnim 0.8s ease-in-out 0.2s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 0.2s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #entrée_3 {
-  animation: myAnim 0.8s ease-in-out 0.3s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 0.3s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #entrée_4 {
-  animation: myAnim 0.8s ease-in-out 0.4s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 0.4s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #plat_1 {
-  animation: myAnim 0.8s ease-in-out 0.8s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 0.8s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #plat_2 {
-  animation: myAnim 0.8s ease-in-out 0.9s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 0.9s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #plat_3 {
-  animation: myAnim 0.8s ease-in-out 1s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 1s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #dessert_1 {
-  animation: myAnim 0.8s ease-in-out 1.6s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 1.6s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #dessert_2 {
-  animation: myAnim 0.8s ease-in-out 1.7s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 1.7s 1 normal forwards;
 }
 .menu_body_container_body-starters-dishes-desserts #dessert_3 {
-  animation: myAnim 0.8s ease-in-out 1.8s 1 normal forwards;
+  animation: anim-arrival-of-dishes 0.8s ease-in-out 1.8s 1 normal forwards;
 }
 
 .body_container_honmepage {
@@ -406,9 +406,8 @@ input[value] {
   align-items: center;
   cursor: none;
   background: radial-gradient(circle, #ffffff 0%, rgb(53, 53, 53) 100%);
-  left: 0;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow: hidden;
   animation: hidden_loader 3s linear forwards;
 }
@@ -424,27 +423,24 @@ input[value] {
 .loader .cercle2 {
   position: absolute;
   border-radius: 50%;
-  display: inline-block;
-  box-sizing: border-box;
   animation: rotation 1s linear infinite;
 }
 .loader .cercle1 {
-  width: 200px;
-  height: 200px;
-  z-index: 2;
-  background: linear-gradient(#9356DC 95%, #99E2D0 100%);
-}
-.loader .cercle2 {
   z-index: 1;
   width: 250px;
   height: 250px;
   box-shadow: 3px 3px 18px 5px rgba(0, 0, 0, 0.62);
   background: linear-gradient(#9356DC 50%, #99E2D0 100%);
 }
+.loader .cercle2 {
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(#9356DC 95%, #99E2D0 100%);
+}
 .loader .cercle1::after,
 .loader .cercle2::after {
   content: "";
-  box-sizing: border-box;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -453,12 +449,12 @@ input[value] {
   background: #ffffff;
 }
 .loader .cercle1::after {
-  width: 195px;
-  height: 195px;
-}
-.loader .cercle2::after {
   width: 245px;
   height: 245px;
+}
+.loader .cercle2::after {
+  width: 195px;
+  height: 195px;
 }
 .loader .cercle3 {
   position: absolute;
@@ -492,10 +488,10 @@ input[value] {
 .loader .cercle5 {
   position: absolute;
   z-index: 5;
-  width: 100px;
-  height: 100px;
+  width: 95px;
+  height: 95px;
   border-radius: 50%;
-  border-top: 1px solid #ffffff;
+  border-top: 1px solid #FFFFFF;
   border-right: 1.5px solid transparent;
   animation: rotation2 1s linear infinite;
 }
@@ -507,7 +503,7 @@ input[value] {
   width: 103px;
   height: 103px;
   border-radius: 50%;
-  border-bottom: 1px solid #ffffff;
+  border-bottom: 1px solid #FFFFFF;
   border-left: 1.2px solid transparent;
 }
 @keyframes rotation {

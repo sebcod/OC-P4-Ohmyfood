@@ -44,6 +44,8 @@
             max-width: 634px;
             user-select: none;
             box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
+
+            // invisible and move left when animation starts
             transform: translateX(-600px);
             opacity: 0;
 
@@ -51,6 +53,7 @@
                 box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.20);
             }
 
+            // hover check suggested
             input[type=radio]:hover+label {
                 .part_right {
                     transform: translateX(-15px);
@@ -58,6 +61,7 @@
                 }
             }
 
+            // dishes checked
             input[type=radio]:checked+label {
                 .part_right {
                     transform: translateX(-100px);
@@ -69,9 +73,11 @@
                 }
             }
 
+            // hidde radio
             input[type=radio] {
                 display: none;
             }
+
 
             label {
                 display: flex;
@@ -93,11 +99,13 @@
                         overflow: hidden;
                         text-overflow: ellipsis;
 
+                        // dishe title
                         &:first-child {
                             font-size: 1em;
                             font-weight: 800;
                         }
 
+                        // dishe description
                         &:last-child {
                             font-size: 0.9em;
                             font-weight: 300;
@@ -119,13 +127,14 @@
                     }
 
                     .selected {
+                        @include grid-center;
                         background-color: $color_bg_Green;
                         position: absolute;
                         border-radius: 0 20px 20px 0;
                         width: 100px;
                         height: 100%;
+                        // start not selected hidden
                         right: -100px;
-                        @include grid-center;
 
                         svg {
                             font-size: 2rem;
@@ -139,8 +148,8 @@
         }
     }
 
-
-    @keyframes myAnim {
+    // The dishes arrive from the right with opacity 0, then take up their positions in the center with opacity 1 after a bounce.
+    @keyframes anim-arrival-of-dishes {
         0% {
             animation-timing-function: ease-in-out;
             opacity: 0;
@@ -165,42 +174,42 @@
     }
 
     #entrée_1 {
-        animation: myAnim $animation_speed_plat ease-in-out $delay_animation_plat 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out $delay_animation_plat 1 normal forwards;
     }
 
     #entrée_2 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*2) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*2) 1 normal forwards;
     }
 
     #entrée_3 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*3) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*3) 1 normal forwards;
     }
 
     #entrée_4 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*4) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*4) 1 normal forwards;
     }
 
     #plat_1 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*4 + $delay_animation_plat_gap) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*4 + $delay_animation_plat_gap) 1 normal forwards;
     }
 
     #plat_2 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*5 + $delay_animation_plat_gap) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*5 + $delay_animation_plat_gap) 1 normal forwards;
     }
 
     #plat_3 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*6 + $delay_animation_plat_gap) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*6 + $delay_animation_plat_gap) 1 normal forwards;
     }
 
     #dessert_1 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*8 + $delay_animation_plat_gap*2) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*8 + $delay_animation_plat_gap*2) 1 normal forwards;
     }
 
     #dessert_2 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*9 + $delay_animation_plat_gap*2) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*9 + $delay_animation_plat_gap*2) 1 normal forwards;
     }
 
     #dessert_3 {
-        animation: myAnim $animation_speed_plat ease-in-out calc($delay_animation_plat*10 + $delay_animation_plat_gap*2) 1 normal forwards;
+        animation: anim-arrival-of-dishes $animation_speed_plat ease-in-out calc($delay_animation_plat*10 + $delay_animation_plat_gap*2) 1 normal forwards;
     }
 }
