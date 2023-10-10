@@ -6,6 +6,10 @@
     @include flex-center;
     font-family: $Font_text;
 
+    a {
+        color: $color_text_white;
+    }
+
     &__container {
         padding: 25px 0;
         display: grid;

@@ -38,7 +38,12 @@
         font-size: 16px;
     }
 
-    &--purpul ::before {
+    &:hover ::before {
         color: $color_bg_Purple;
     }
+
+    &:hover {
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
+    }
+
 }

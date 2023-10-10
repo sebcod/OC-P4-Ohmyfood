@@ -17,12 +17,7 @@ li {
   list-style: none;
 }
 
-p,
-h2,
-h3,
-i,
-input::placeholder,
-input[value] {
+* {
   font-family: "Roboto", sans-serif;
   color: #101010;
 }
@@ -140,8 +135,11 @@ input[value] {
   font-weight: 500;
   font-size: 16px;
 }
-.stepBlock--purpul ::before {
+.stepBlock:hover ::before {
   color: #9256DC;
+}
+.stepBlock:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.2);
 }
 
 .cardRestaurant {
@@ -675,6 +673,9 @@ input[value] {
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
+}
+.footer a {
+  color: #FFFFFF;
 }
 .footer__container {
   padding: 25px 0;

@@ -5,12 +5,7 @@
 $Font_logo_and_title: 'Shrikhand', serif;
 $Font_text: 'Roboto', sans-serif;
 
-p,
-h2,
-h3,
-i,
-input::placeholder,
-input[value] {
+* {
     font-family: $Font_text;
     color: $color_text_noir;
 }
